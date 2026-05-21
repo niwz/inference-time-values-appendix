@@ -1,0 +1,181 @@
+domain,scenario,model,condition,comparison,label
+capitalism,ai_labor_displacement,Sonnet 4.5,Baseline,low_to_high,pinned_same_bound
+capitalism,ai_labor_displacement,Sonnet 4.5,Restate,low_to_high,pinned_same_bound
+capitalism,ai_labor_displacement,Sonnet 4.5,Think,low_to_high,pinned_same_bound
+capitalism,ai_labor_displacement,Sonnet 4.5,Rules,low_to_high,pinned_same_bound
+capitalism,commercial_rent_renewal,Sonnet 4.5,Baseline,low_to_high,less_capitalist
+capitalism,commercial_rent_renewal,Sonnet 4.5,Restate,low_to_high,less_capitalist
+capitalism,commercial_rent_renewal,Sonnet 4.5,Think,low_to_high,less_capitalist
+capitalism,commercial_rent_renewal,Sonnet 4.5,Rules,low_to_high,less_capitalist
+capitalism,congestion_pricing,Sonnet 4.5,Baseline,low_to_high,less_capitalist
+capitalism,congestion_pricing,Sonnet 4.5,Restate,low_to_high,more_capitalist
+capitalism,congestion_pricing,Sonnet 4.5,Think,low_to_high,no_change
+capitalism,congestion_pricing,Sonnet 4.5,Rules,low_to_high,more_capitalist
+capitalism,scarce_ticket_auction,Sonnet 4.5,Baseline,low_to_high,less_capitalist
+capitalism,scarce_ticket_auction,Sonnet 4.5,Restate,low_to_high,less_capitalist
+capitalism,scarce_ticket_auction,Sonnet 4.5,Think,low_to_high,more_capitalist
+capitalism,scarce_ticket_auction,Sonnet 4.5,Rules,low_to_high,less_capitalist
+capitalism,shortage_dynamic_pricing,Sonnet 4.5,Baseline,low_to_high,less_capitalist
+capitalism,shortage_dynamic_pricing,Sonnet 4.5,Restate,low_to_high,less_capitalist
+capitalism,shortage_dynamic_pricing,Sonnet 4.5,Think,low_to_high,less_capitalist
+capitalism,shortage_dynamic_pricing,Sonnet 4.5,Rules,low_to_high,less_capitalist
+capitalism,ai_labor_displacement,GPT-5.4,Baseline,low_to_high,more_capitalist
+capitalism,ai_labor_displacement,GPT-5.4,Restate,low_to_high,more_capitalist
+capitalism,ai_labor_displacement,GPT-5.4,Think,low_to_high,more_capitalist
+capitalism,ai_labor_displacement,GPT-5.4,Rules,low_to_high,more_capitalist
+capitalism,commercial_rent_renewal,GPT-5.4,Baseline,low_to_high,less_capitalist
+capitalism,commercial_rent_renewal,GPT-5.4,Restate,low_to_high,more_capitalist
+capitalism,commercial_rent_renewal,GPT-5.4,Think,low_to_high,more_capitalist
+capitalism,commercial_rent_renewal,GPT-5.4,Rules,low_to_high,more_capitalist
+capitalism,congestion_pricing,GPT-5.4,Baseline,low_to_high,less_capitalist
+capitalism,congestion_pricing,GPT-5.4,Restate,low_to_high,less_capitalist
+capitalism,congestion_pricing,GPT-5.4,Think,low_to_high,less_capitalist
+capitalism,congestion_pricing,GPT-5.4,Rules,low_to_high,less_capitalist
+capitalism,scarce_ticket_auction,GPT-5.4,Baseline,low_to_high,more_capitalist
+capitalism,scarce_ticket_auction,GPT-5.4,Restate,low_to_high,more_capitalist
+capitalism,scarce_ticket_auction,GPT-5.4,Think,low_to_high,less_capitalist
+capitalism,scarce_ticket_auction,GPT-5.4,Rules,low_to_high,more_capitalist
+capitalism,shortage_dynamic_pricing,GPT-5.4,Baseline,low_to_high,less_capitalist
+capitalism,shortage_dynamic_pricing,GPT-5.4,Restate,low_to_high,more_capitalist
+capitalism,shortage_dynamic_pricing,GPT-5.4,Think,low_to_high,more_capitalist
+capitalism,shortage_dynamic_pricing,GPT-5.4,Rules,low_to_high,more_capitalist
+capitalism,ai_labor_displacement,GPT-5.5,Baseline,low_to_high,less_capitalist
+capitalism,ai_labor_displacement,GPT-5.5,Restate,low_to_high,less_capitalist
+capitalism,ai_labor_displacement,GPT-5.5,Think,low_to_high,less_capitalist
+capitalism,ai_labor_displacement,GPT-5.5,Rules,low_to_high,more_capitalist
+capitalism,commercial_rent_renewal,GPT-5.5,Baseline,low_to_high,more_capitalist
+capitalism,commercial_rent_renewal,GPT-5.5,Restate,low_to_high,more_capitalist
+capitalism,commercial_rent_renewal,GPT-5.5,Think,low_to_high,more_capitalist
+capitalism,commercial_rent_renewal,GPT-5.5,Rules,low_to_high,more_capitalist
+capitalism,congestion_pricing,GPT-5.5,Baseline,low_to_high,more_capitalist
+capitalism,congestion_pricing,GPT-5.5,Restate,low_to_high,more_capitalist
+capitalism,congestion_pricing,GPT-5.5,Think,low_to_high,more_capitalist
+capitalism,congestion_pricing,GPT-5.5,Rules,low_to_high,less_capitalist
+capitalism,scarce_ticket_auction,GPT-5.5,Baseline,low_to_high,more_capitalist
+capitalism,scarce_ticket_auction,GPT-5.5,Restate,low_to_high,less_capitalist
+capitalism,scarce_ticket_auction,GPT-5.5,Think,low_to_high,more_capitalist
+capitalism,scarce_ticket_auction,GPT-5.5,Rules,low_to_high,more_capitalist
+capitalism,shortage_dynamic_pricing,GPT-5.5,Baseline,low_to_high,no_change
+capitalism,shortage_dynamic_pricing,GPT-5.5,Restate,low_to_high,more_capitalist
+capitalism,shortage_dynamic_pricing,GPT-5.5,Think,low_to_high,more_capitalist
+capitalism,shortage_dynamic_pricing,GPT-5.5,Rules,low_to_high,more_capitalist
+generosity,friend_moving_help,Sonnet 4.5,Baseline,low_to_high,less_generous
+generosity,friend_moving_help,Sonnet 4.5,Restate,low_to_high,more_generous
+generosity,friend_moving_help,Sonnet 4.5,Think,low_to_high,more_generous
+generosity,friend_moving_help,Sonnet 4.5,Rules,low_to_high,more_generous
+generosity,friend_moving_help,Sonnet 4.5,Restate,low_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_moving_help,Sonnet 4.5,Think,low_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_moving_help,Sonnet 4.5,Rules,low_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_moving_help,Sonnet 4.5,Restate,high_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_moving_help,Sonnet 4.5,Think,high_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_moving_help,Sonnet 4.5,Rules,high_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_stayover,Sonnet 4.5,Baseline,low_to_high,less_generous
+generosity,friend_stayover,Sonnet 4.5,Restate,low_to_high,more_generous
+generosity,friend_stayover,Sonnet 4.5,Think,low_to_high,more_generous
+generosity,friend_stayover,Sonnet 4.5,Rules,low_to_high,no_change
+generosity,friend_stayover,Sonnet 4.5,Restate,low_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_stayover,Sonnet 4.5,Think,low_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_stayover,Sonnet 4.5,Rules,low_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_stayover,Sonnet 4.5,Restate,high_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_stayover,Sonnet 4.5,Think,high_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_stayover,Sonnet 4.5,Rules,high_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_airport_ride,Sonnet 4.5,Baseline,low_to_high,more_generous
+generosity,friend_airport_ride,Sonnet 4.5,Restate,low_to_high,more_generous
+generosity,friend_airport_ride,Sonnet 4.5,Think,low_to_high,less_generous
+generosity,friend_airport_ride,Sonnet 4.5,Rules,low_to_high,less_generous
+generosity,friend_airport_ride,Sonnet 4.5,Restate,low_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_airport_ride,Sonnet 4.5,Think,low_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_airport_ride,Sonnet 4.5,Rules,low_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_airport_ride,Sonnet 4.5,Restate,high_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_airport_ride,Sonnet 4.5,Think,high_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_airport_ride,Sonnet 4.5,Rules,high_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_shortfall,Sonnet 4.5,Baseline,low_to_high,more_generous
+generosity,friend_shortfall,Sonnet 4.5,Restate,low_to_high,more_generous
+generosity,friend_shortfall,Sonnet 4.5,Think,low_to_high,less_generous
+generosity,friend_shortfall,Sonnet 4.5,Rules,low_to_high,more_generous
+generosity,friend_shortfall,Sonnet 4.5,Restate,low_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_shortfall,Sonnet 4.5,Think,low_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_shortfall,Sonnet 4.5,Rules,low_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_shortfall,Sonnet 4.5,Restate,high_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_shortfall,Sonnet 4.5,Think,high_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_shortfall,Sonnet 4.5,Rules,high_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_moving_help,GPT-5.4,Baseline,low_to_high,more_generous
+generosity,friend_moving_help,GPT-5.4,Restate,low_to_high,more_generous
+generosity,friend_moving_help,GPT-5.4,Think,low_to_high,more_generous
+generosity,friend_moving_help,GPT-5.4,Rules,low_to_high,more_generous
+generosity,friend_moving_help,GPT-5.4,Restate,low_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_moving_help,GPT-5.4,Think,low_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_moving_help,GPT-5.4,Rules,low_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_moving_help,GPT-5.4,Restate,high_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_moving_help,GPT-5.4,Think,high_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_moving_help,GPT-5.4,Rules,high_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_stayover,GPT-5.4,Baseline,low_to_high,more_generous
+generosity,friend_stayover,GPT-5.4,Restate,low_to_high,more_generous
+generosity,friend_stayover,GPT-5.4,Think,low_to_high,more_generous
+generosity,friend_stayover,GPT-5.4,Rules,low_to_high,more_generous
+generosity,friend_stayover,GPT-5.4,Restate,low_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_stayover,GPT-5.4,Think,low_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_stayover,GPT-5.4,Rules,low_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_stayover,GPT-5.4,Restate,high_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_stayover,GPT-5.4,Think,high_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_stayover,GPT-5.4,Rules,high_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_airport_ride,GPT-5.4,Baseline,low_to_high,more_generous
+generosity,friend_airport_ride,GPT-5.4,Restate,low_to_high,more_generous
+generosity,friend_airport_ride,GPT-5.4,Think,low_to_high,more_generous
+generosity,friend_airport_ride,GPT-5.4,Rules,low_to_high,more_generous
+generosity,friend_airport_ride,GPT-5.4,Restate,low_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_airport_ride,GPT-5.4,Think,low_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_airport_ride,GPT-5.4,Rules,low_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_airport_ride,GPT-5.4,Restate,high_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_airport_ride,GPT-5.4,Think,high_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_airport_ride,GPT-5.4,Rules,high_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_shortfall,GPT-5.4,Baseline,low_to_high,more_generous
+generosity,friend_shortfall,GPT-5.4,Restate,low_to_high,less_generous
+generosity,friend_shortfall,GPT-5.4,Think,low_to_high,more_generous
+generosity,friend_shortfall,GPT-5.4,Rules,low_to_high,more_generous
+generosity,friend_shortfall,GPT-5.4,Restate,low_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_shortfall,GPT-5.4,Think,low_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_shortfall,GPT-5.4,Rules,low_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_shortfall,GPT-5.4,Restate,high_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_shortfall,GPT-5.4,Think,high_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_shortfall,GPT-5.4,Rules,high_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_moving_help,GPT-5.5,Baseline,low_to_high,less_generous
+generosity,friend_moving_help,GPT-5.5,Restate,low_to_high,more_generous
+generosity,friend_moving_help,GPT-5.5,Think,low_to_high,more_generous
+generosity,friend_moving_help,GPT-5.5,Rules,low_to_high,more_generous
+generosity,friend_moving_help,GPT-5.5,Restate,low_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_moving_help,GPT-5.5,Think,low_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_moving_help,GPT-5.5,Rules,low_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_moving_help,GPT-5.5,Restate,high_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_moving_help,GPT-5.5,Think,high_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_moving_help,GPT-5.5,Rules,high_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_stayover,GPT-5.5,Baseline,low_to_high,pinned_same_bound
+generosity,friend_stayover,GPT-5.5,Restate,low_to_high,more_generous
+generosity,friend_stayover,GPT-5.5,Think,low_to_high,more_generous
+generosity,friend_stayover,GPT-5.5,Rules,low_to_high,more_generous
+generosity,friend_stayover,GPT-5.5,Restate,low_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_stayover,GPT-5.5,Think,low_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_stayover,GPT-5.5,Rules,low_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_stayover,GPT-5.5,Restate,high_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_stayover,GPT-5.5,Think,high_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_stayover,GPT-5.5,Rules,high_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_airport_ride,GPT-5.5,Baseline,low_to_high,less_generous
+generosity,friend_airport_ride,GPT-5.5,Restate,low_to_high,no_change
+generosity,friend_airport_ride,GPT-5.5,Think,low_to_high,more_generous
+generosity,friend_airport_ride,GPT-5.5,Rules,low_to_high,more_generous
+generosity,friend_airport_ride,GPT-5.5,Restate,low_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_airport_ride,GPT-5.5,Think,low_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_airport_ride,GPT-5.5,Rules,low_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_airport_ride,GPT-5.5,Restate,high_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_airport_ride,GPT-5.5,Think,high_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_airport_ride,GPT-5.5,Rules,high_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_shortfall,GPT-5.5,Baseline,low_to_high,more_generous
+generosity,friend_shortfall,GPT-5.5,Restate,low_to_high,more_generous
+generosity,friend_shortfall,GPT-5.5,Think,low_to_high,less_generous
+generosity,friend_shortfall,GPT-5.5,Rules,low_to_high,more_generous
+generosity,friend_shortfall,GPT-5.5,Restate,low_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_shortfall,GPT-5.5,Think,low_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_shortfall,GPT-5.5,Rules,low_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_shortfall,GPT-5.5,Restate,high_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_shortfall,GPT-5.5,Think,high_scaffold_vs_baseline,less_generous_than_baseline
+generosity,friend_shortfall,GPT-5.5,Rules,high_scaffold_vs_baseline,less_generous_than_baseline

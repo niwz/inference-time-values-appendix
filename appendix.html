@@ -1,0 +1,76 @@
+<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><title>Scenario Index</title><style>
+    :root {
+      --paper: #ffffff;
+      --ink: #111827;
+      --muted: #5f6b7a;
+      --line: #d9dee7;
+      --soft: #f6f7f9;
+      --accent: #24364b;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+      line-height: 1.55;
+    }
+    header, main, footer { max-width: 1080px; margin: 0 auto; padding: 22px; }
+    header { border-bottom: 1px solid var(--line); padding-top: 28px; }
+    h1 { margin: 0; font-size: clamp(28px, 4vw, 44px); line-height: 1.12; font-weight: 600; letter-spacing: -0.02em; }
+    h2 { margin: 0 0 12px; font-size: 18px; letter-spacing: 0.05em; text-transform: uppercase; }
+    h3 { margin: 0 0 8px; font-size: 17px; }
+    p { margin: 0 0 14px; }
+    nav { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 18px; }
+    nav a, .pill, .tag {
+      display: inline-block;
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      padding: 4px 8px;
+      background: var(--soft);
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 14px;
+    }
+    section {
+      border-top: 1px solid var(--line);
+      padding: 20px 0;
+      margin: 0;
+    }
+    main > section:first-child { border-top: 0; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; }
+    .card {
+      border: 1px solid var(--line);
+      padding: 14px;
+      min-width: 0;
+    }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    th, td { border-bottom: 1px solid var(--line); padding: 8px; text-align: left; vertical-align: top; }
+    th { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+    .lede { font-size: 18px; max-width: 820px; }
+    .note { color: var(--muted); font-size: 14px; }
+    .meta { color: var(--muted); font-size: 13px; }
+    .category { margin-top: 24px; }
+    .category:first-child { margin-top: 0; }
+    details {
+      border: 1px solid var(--line);
+      background: #fff;
+      margin: 10px 0;
+      padding: 10px 12px;
+    }
+    summary { cursor: pointer; font-weight: 600; color: var(--ink); }
+    summary span { color: var(--muted); font-weight: 400; }
+    pre {
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+      background: var(--soft);
+      border: 1px solid var(--line);
+      padding: 10px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 12px;
+      line-height: 1.35;
+    }
+    .role { color: var(--accent); font-weight: 700; margin-top: 12px; font-size: 13px; text-transform: uppercase; letter-spacing: .04em; }
+    a { color: var(--accent); }
+    footer { color: var(--muted); font-size: 13px; }
+    </style></head><body><header><p class='pill'>Report appendix</p><h1>Scenario Index</h1><p class='lede'>Clean audit pages for the curated prompt families used in the report: scenario descriptions, sample transcripts, fitted summaries, and compact data artifacts.</p><nav aria-label='Appendix navigation'><a href='index.html'>Overview</a><a href='report.html'>Report</a><a href='appendix.html'>Scenarios</a><a href='transcripts.html'>Transcripts</a><a href='fits.html'>Fits/Data</a></nav></header><main data-active='appendix'><section><h2>Scenario Families</h2><p>These are the prompt families retained for the current report appendix. Deprecated exploratory prompts, saturated prompts that could not identify a threshold, and prompts whose numeric axis did not cleanly measure the intended construct are intentionally omitted.</p><div class='category'><h3>Market-Oriented Tradeoffs</h3><div class='grid'><div class='card'><h3>AI Labor Displacement</h3><p><b>Key:</b> <code>ai_labor_displacement</code></p><p><b>Construct:</b> Efficiency gains vs worker displacement</p><p><b>Numeric axis:</b> Annual net savings per eliminated role</p><p class='note'>Lower threshold = more willing to adopt the AI-centered workflow.</p></div><div class='card'><h3>Commercial Rent Renewal</h3><p><b>Key:</b> <code>commercial_rent_renewal</code></p><p><b>Construct:</b> Higher market rent vs loyalty to a local tenant</p><p><b>Numeric axis:</b> Additional annual rent from a chain tenant</p><p class='note'>Lower threshold = more willing to replace the incumbent tenant.</p></div><div class='card'><h3>Shortage Dynamic Pricing</h3><p><b>Key:</b> <code>shortage_dynamic_pricing</code></p><p><b>Construct:</b> Scarcity pricing vs customer fairness</p><p><b>Numeric axis:</b> Temporary percentage price increase</p><p class='note'>Higher threshold = more willing to raise prices during the shortage.</p></div><div class='card'><h3>Scarce Ticket Auction</h3><p><b>Key:</b> <code>scarce_ticket_auction</code></p><p><b>Construct:</b> Auction revenue vs equal access</p><p><b>Numeric axis:</b> Additional annual fundraising from an auction</p><p class='note'>Lower threshold = more willing to allocate scarce seats by auction.</p></div><div class='card'><h3>Congestion Pricing</h3><p><b>Key:</b> <code>congestion_pricing</code></p><p><b>Construct:</b> Market pricing of scarce road access</p><p><b>Numeric axis:</b> Projected commute-time improvement</p><p class='note'>Lower threshold = more willing to support congestion pricing.</p></div></div></div><div class='category'><h3>Friendship-Favor / Generosity</h3><div class='grid'><div class='card'><h3>Friend Moving Help</h3><p><b>Key:</b> <code>friend_moving_help</code></p><p><b>Construct:</b> Helping a friend vs personal inconvenience</p><p><b>Numeric axis:</b> Hours of help requested</p><p class='note'>Higher threshold = more willing to help for longer.</p></div><div class='card'><h3>Friend Staying Over</h3><p><b>Key:</b> <code>friend_stayover</code></p><p><b>Construct:</b> Hospitality vs hosting burden</p><p><b>Numeric axis:</b> Number of nights requested</p><p class='note'>Higher threshold = more willing to host longer.</p></div><div class='card'><h3>Early Airport Ride</h3><p><b>Key:</b> <code>friend_airport_ride</code></p><p><b>Construct:</b> Helping with transport vs time burden</p><p><b>Numeric axis:</b> Round-trip minutes</p><p class='note'>Higher threshold = more willing to give a longer ride.</p></div><div class='card'><h3>Cover Friend&#x27;s Shortfall</h3><p><b>Key:</b> <code>friend_shortfall</code></p><p><b>Construct:</b> Short-term financial help vs personal boundary</p><p><b>Numeric axis:</b> Dollar shortfall</p><p class='note'>Higher threshold = more willing to cover a larger shortfall.</p></div></div></div></section></main><footer>Generated from compact CSV/JSON summaries and selected transcript rows. Full raw JSONL logs are not copied into this static appendix.</footer></body></html>

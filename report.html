@@ -1,0 +1,76 @@
+<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><title>Report: Would an LLM Lay Off 15 Workers?</title><style>
+    :root {
+      --paper: #ffffff;
+      --ink: #111827;
+      --muted: #5f6b7a;
+      --line: #d9dee7;
+      --soft: #f6f7f9;
+      --accent: #24364b;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+      line-height: 1.55;
+    }
+    header, main, footer { max-width: 1080px; margin: 0 auto; padding: 22px; }
+    header { border-bottom: 1px solid var(--line); padding-top: 28px; }
+    h1 { margin: 0; font-size: clamp(28px, 4vw, 44px); line-height: 1.12; font-weight: 600; letter-spacing: -0.02em; }
+    h2 { margin: 0 0 12px; font-size: 18px; letter-spacing: 0.05em; text-transform: uppercase; }
+    h3 { margin: 0 0 8px; font-size: 17px; }
+    p { margin: 0 0 14px; }
+    nav { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 18px; }
+    nav a, .pill, .tag {
+      display: inline-block;
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      padding: 4px 8px;
+      background: var(--soft);
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 14px;
+    }
+    section {
+      border-top: 1px solid var(--line);
+      padding: 20px 0;
+      margin: 0;
+    }
+    main > section:first-child { border-top: 0; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; }
+    .card {
+      border: 1px solid var(--line);
+      padding: 14px;
+      min-width: 0;
+    }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    th, td { border-bottom: 1px solid var(--line); padding: 8px; text-align: left; vertical-align: top; }
+    th { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+    .lede { font-size: 18px; max-width: 820px; }
+    .note { color: var(--muted); font-size: 14px; }
+    .meta { color: var(--muted); font-size: 13px; }
+    .category { margin-top: 24px; }
+    .category:first-child { margin-top: 0; }
+    details {
+      border: 1px solid var(--line);
+      background: #fff;
+      margin: 10px 0;
+      padding: 10px 12px;
+    }
+    summary { cursor: pointer; font-weight: 600; color: var(--ink); }
+    summary span { color: var(--muted); font-weight: 400; }
+    pre {
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+      background: var(--soft);
+      border: 1px solid var(--line);
+      padding: 10px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 12px;
+      line-height: 1.35;
+    }
+    .role { color: var(--accent); font-weight: 700; margin-top: 12px; font-size: 13px; text-transform: uppercase; letter-spacing: .04em; }
+    a { color: var(--accent); }
+    footer { color: var(--muted); font-size: 13px; }
+    </style></head><body><header><p class='pill'>Report appendix</p><h1>Report: Would an LLM Lay Off 15 Workers?</h1><p class='lede'>Clean audit pages for the curated prompt families used in the report: scenario descriptions, sample transcripts, fitted summaries, and compact data artifacts.</p><nav aria-label='Appendix navigation'><a href='index.html'>Overview</a><a href='report.html'>Report</a><a href='appendix.html'>Scenarios</a><a href='transcripts.html'>Transcripts</a><a href='fits.html'>Fits/Data</a></nav></header><main data-active='report'><section><h2>Abstract</h2><p><a class='pill' href='assets/data/main.pdf'>Download PDF</a></p><p>Modern language models increasingly answer advice questions that are not verifiable like arithmetic or programming tasks. In domains such as layoffs, commercialization, friendship obligations, and social discounting, there is often no agreed correct ethical answer, yet deployed models still make recommendations. We test whether runtime controls usually treated as quality or latency knobs also move those value-laden recommendations. For each scenario, we write a realistic advice request with one numeric detail, sample binary recommendations across that axis, and fit a probit threshold: the point where the model is 50/50 between the two options. Across Sonnet 4.5, GPT-5.4, and GPT-5.5, minor inference-time changes often move thresholds substantially, but not in one universal moral direction.</p></section><section><h2>Question and Related Work</h2><p>Many benchmark tasks have an external answer key. A theorem proof is valid or invalid; code passes or fails tests; an arithmetic answer is right or wrong. Advice domains are different. Questions such as whether to lay off workers for efficiency gains, commercialize access to a scarce good, spend money now or later, or help a friend at personal cost are value-laden and underdetermined by facts alone. There is no single noncontroversial ethical answer that all reasonable users would accept. Still, models answer these questions, and their answers reveal implicit preferences: thresholds at which one consideration begins to dominate another.</p><p>This makes inference-time controls practically important. If a small scaffold or reasoning-budget change moves the threshold, then the control is not merely improving accuracy in the usual verifiable sense. It is changing the model's revealed tradeoff in a domain where better is not externally pinned down. We therefore ask whether minor runtime perturbations shift local advice thresholds, and whether those shifts are systematic. The answer is mixed: thresholds often move sharply, but the direction depends on model, prompt family, and scaffold.</p><p>This is adjacent to work on eliciting model preferences and value systems, representation-level probes and steering, and prompting or training methods that ask models to reason, critique, or follow explicit principles.</p><p>The setup is deliberately Thurstonian. A model recommendation is treated as a noisy binary choice generated by a latent preference difference, so a probit curve gives a natural threshold estimate.</p></section><section><h2>Method</h2><p>Each scenario is a realistic user advice request with one numeric axis <i>x</i>. The model eventually chooses between two concrete options. We sample multiple values of <i>x</i>, parse the first-line recommendation into a binary outcome, and fit <code>P(Option B | x) = Phi(alpha + beta x)</code>. The fitted midpoint <code>x* = -alpha / beta</code> is the revealed 50/50 threshold. Censored cells are reported as bounds.</p><p>We test Sonnet 4.5, GPT-5.4, and GPT-5.5 under low and high provider reasoning effort. Each scenario is repeated with baseline, restate, think, and rules scaffolds. Wilson intervals summarize sign counts descriptively; they are not treated as iid causal confidence intervals.</p></section><section><h2>Representative Result: AI Labor</h2><p>GPT-5.4 becomes more willing to recommend replacing 15 workers under higher thinking on the Think scaffold. GPT-5.5 moves the other way on the same prompt. Sonnet 4.5 is mostly worker-protective even in a wider diagnostic range.</p></section><section><h2>Domain Aggregates</h2><p>Across most scenario families, thresholds move when we change a scaffold or thinking budget, but the sign and magnitude are context-dependent. Two patterns survive aggregation in the current battery. First, in four friendship-favor scenarios, every informative scaffold-vs-baseline contrast for each model moves toward less willingness to help. Second, in a curated market-oriented set that excludes weak public-service/privatization prompts, high thinking moves GPT-5.4 and GPT-5.5 toward the market option more often than not, while Sonnet 4.5 usually moves the other way.</p></section><section><h2>Limitations</h2><p>The scenario families are curated and calibrated; they are not sampled from a population of user queries. The forced final A/B choice is useful for measurement but less natural than ordinary chat. Sign-count intervals are descriptive because comparisons cluster by scenario, parser, model, and scaffold. Some probit fits are censored when every sampled value produces the same answer. Provider reasoning-effort settings are deployment-relevant runtime controls, not token-identical mechanistic interventions.</p></section></main><footer>Generated from compact CSV/JSON summaries and selected transcript rows. Full raw JSONL logs are not copied into this static appendix.</footer></body></html>

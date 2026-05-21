@@ -1,0 +1,76 @@
+<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><title>Fits and Data</title><style>
+    :root {
+      --paper: #ffffff;
+      --ink: #111827;
+      --muted: #5f6b7a;
+      --line: #d9dee7;
+      --soft: #f6f7f9;
+      --accent: #24364b;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+      line-height: 1.55;
+    }
+    header, main, footer { max-width: 1080px; margin: 0 auto; padding: 22px; }
+    header { border-bottom: 1px solid var(--line); padding-top: 28px; }
+    h1 { margin: 0; font-size: clamp(28px, 4vw, 44px); line-height: 1.12; font-weight: 600; letter-spacing: -0.02em; }
+    h2 { margin: 0 0 12px; font-size: 18px; letter-spacing: 0.05em; text-transform: uppercase; }
+    h3 { margin: 0 0 8px; font-size: 17px; }
+    p { margin: 0 0 14px; }
+    nav { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 18px; }
+    nav a, .pill, .tag {
+      display: inline-block;
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      padding: 4px 8px;
+      background: var(--soft);
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 14px;
+    }
+    section {
+      border-top: 1px solid var(--line);
+      padding: 20px 0;
+      margin: 0;
+    }
+    main > section:first-child { border-top: 0; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; }
+    .card {
+      border: 1px solid var(--line);
+      padding: 14px;
+      min-width: 0;
+    }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    th, td { border-bottom: 1px solid var(--line); padding: 8px; text-align: left; vertical-align: top; }
+    th { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+    .lede { font-size: 18px; max-width: 820px; }
+    .note { color: var(--muted); font-size: 14px; }
+    .meta { color: var(--muted); font-size: 13px; }
+    .category { margin-top: 24px; }
+    .category:first-child { margin-top: 0; }
+    details {
+      border: 1px solid var(--line);
+      background: #fff;
+      margin: 10px 0;
+      padding: 10px 12px;
+    }
+    summary { cursor: pointer; font-weight: 600; color: var(--ink); }
+    summary span { color: var(--muted); font-weight: 400; }
+    pre {
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+      background: var(--soft);
+      border: 1px solid var(--line);
+      padding: 10px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 12px;
+      line-height: 1.35;
+    }
+    .role { color: var(--accent); font-weight: 700; margin-top: 12px; font-size: 13px; text-transform: uppercase; letter-spacing: .04em; }
+    a { color: var(--accent); }
+    footer { color: var(--muted); font-size: 13px; }
+    </style></head><body><header><p class='pill'>Report appendix</p><h1>Fits and Data</h1><p class='lede'>Clean audit pages for the curated prompt families used in the report: scenario descriptions, sample transcripts, fitted summaries, and compact data artifacts.</p><nav aria-label='Appendix navigation'><a href='index.html'>Overview</a><a href='report.html'>Report</a><a href='appendix.html'>Scenarios</a><a href='transcripts.html'>Transcripts</a><a href='fits.html'>Fits/Data</a></nav></header><main data-active='fits'><section><h2>Wilson Sign-Count Table</h2><table><thead><tr><th>Domain</th><th>Contrast</th><th>Model</th><th>Count</th><th>Rate</th><th>Wilson 95%</th><th>Non-informative</th></tr></thead><tbody><tr><td>capitalism</td><td>low_to_high_more_capitalist</td><td>Sonnet 4.5</td><td>3/16</td><td>18.8%</td><td>[6.6%, 43.0%]</td><td>0</td></tr><tr><td>capitalism</td><td>low_to_high_more_capitalist</td><td>GPT-5.4</td><td>13/20</td><td>65.0%</td><td>[43.3%, 81.9%]</td><td>0</td></tr><tr><td>capitalism</td><td>low_to_high_more_capitalist</td><td>GPT-5.5</td><td>14/20</td><td>70.0%</td><td>[48.1%, 85.5%]</td><td>0</td></tr><tr><td>generosity</td><td>low_to_high_more_generous</td><td>Sonnet 4.5</td><td>10/16</td><td>62.5%</td><td>[38.6%, 81.5%]</td><td>0</td></tr><tr><td>generosity</td><td>scaffold_vs_baseline_less_generous</td><td>Sonnet 4.5</td><td>24/24</td><td>100.0%</td><td>[86.2%, 100.0%]</td><td>0</td></tr><tr><td>generosity</td><td>low_to_high_more_generous</td><td>GPT-5.4</td><td>15/16</td><td>93.8%</td><td>[71.7%, 98.9%]</td><td>0</td></tr><tr><td>generosity</td><td>scaffold_vs_baseline_less_generous</td><td>GPT-5.4</td><td>24/24</td><td>100.0%</td><td>[86.2%, 100.0%]</td><td>0</td></tr><tr><td>generosity</td><td>low_to_high_more_generous</td><td>GPT-5.5</td><td>11/15</td><td>73.3%</td><td>[48.0%, 89.1%]</td><td>0</td></tr><tr><td>generosity</td><td>scaffold_vs_baseline_less_generous</td><td>GPT-5.5</td><td>24/24</td><td>100.0%</td><td>[86.2%, 100.0%]</td><td>0</td></tr></tbody></table></section><section><h2>Copied Fit Artifacts</h2><p>This public build copies only the report files and descriptive sign-count CSVs. Raw JSONL logs and bulky per-run summaries are intentionally not copied by default.</p><table><thead><tr><th>Type</th><th>Artifact</th></tr></thead><tbody><tr><td>data</td><td><a href='assets/data/main.pdf'>main.pdf</a></td></tr><tr><td>data</td><td><a href='assets/data/main.tex'>main.tex</a></td></tr><tr><td>data</td><td><a href='assets/data/references.bib'>references.bib</a></td></tr><tr><td>data</td><td><a href='assets/data/sign_count_summary.csv'>sign_count_summary.csv</a></td></tr><tr><td>data</td><td><a href='assets/data/sign_count_details.csv'>sign_count_details.csv</a></td></tr></tbody></table></section></main><footer>Generated from compact CSV/JSON summaries and selected transcript rows. Full raw JSONL logs are not copied into this static appendix.</footer></body></html>
